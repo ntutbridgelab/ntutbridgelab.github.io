@@ -717,6 +717,9 @@ img.fl {
   display: none;
 }
 
+.pub-list {
+  list-style-type: disc;
+}
 
 
 /*画面幅900px以下の設定
