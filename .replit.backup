@@ -1,0 +1,9 @@
+hidden=[".config"]
+modules = ["web", "nodejs-20"]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+publicDir = "/"
+deploymentTarget = "static"
