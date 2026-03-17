@@ -3,74 +3,53 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>渡辺・菊地・鍾研究室メンバー</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="研究室に所属する学生のリストです">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fixmenu_pagetop.css">
-  <script type="text/javascript" src="js/openclose.js"></script>
-  <script type="text/javascript" src="js/fixmenu_pagetop.js"></script>
-  <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <script src="js/openclose.js"></script>
+  <script src="js/fixmenu_pagetop.js"></script>
+  <script src="js/components.js"></script>
 </head>
 
 <body>
 
-  <div id="container">
+  <div class="container">
 
-    <header>
-      <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="渡辺・菊地・鍾研究室"></a></h1>
-      <!-- <p id="banner"><a href="recruit.html"><img src="images/banner1.jpg" alt="BRIDGE Lab. 興味のある学生はいつでも教員・学生に声をかけてね"></a></p> -->
-    </header>
+    <header class="site-header"></header>
 
-    <!--PC用（801px以上端末）メニュー-->
-    <nav id="menubar">
-      <ul>
-        <li><a href="index.html">HOME<span>トップページ</span></a></li>
-        <li class="current"><a href="members.html">MEMBERs<span>メンバー</span></a></li>
-        <li><a href="projects.html">PROJECTs<span>研究プロジェクト</span></a></li>
-        <li><a href="publications.html">PUBLICATIONs<span>業績</span></a></li>
-        <li><a href="https://note.com/bridge_ntut">BLOG<span>活動・記事</span></a></li>
-      </ul>
-    </nav>
+    <nav class="menubar"></nav>
 
-    <div id="contents">
+    <div class="contents">
 
-      <div id="main">
+      <div class="main">
 
         <section>
 
           <h2>教員</h2>
 
-
           <div class="list">
             <a href="https://chiemi627.github.io/">
-              <!-- <img src="images/sample1.jpg" alt="" class="img"> -->
               <h4>渡辺知恵美（Chiemi Watanabe）</h4>
-              <p> 専門分野・興味：データベース、個人情報保護、アジャイルPBL、学習科学、インクルーシブデザイン</p>
+              <p>専門分野・興味：データベース、個人情報保護、アジャイルPBL、学習科学、インクルーシブデザイン</p>
             </a>
           </div>
 
           <div class="list">
-            <!-- <img src="images/sample1.jpg" alt="" class="img"> -->
             <h4>菊地浩平(Kohei Kikuchi)</h4>
             <p>専門分野・興味：コミュニケーション科学</p>
           </div>
 
           <div class="list">
-            <!-- <a href="item.html"> -->
             <h4>鍾　穎（Ying Zhong）</h4>
             <p>専門分野・興味：人間情報学、ヒューマンインタフェース、人間参加型AI</p>
-            <!-- </a> -->
           </div>
 
           <h2>学生</h2>
 
           <div class="list">
-            <img src="images/Iizuka.jpg" alt="" class="img">
+            <img src="images/Iizuka.jpg" alt="飯塚涼太" class="img" loading="lazy">
             <h4><strong>飯塚 涼太（Ryota Iizuka）</strong></h4>
             <p>技術科学研究科 産業技術学専攻 産業情報学コース 1年</p>
             <p>【研究テーマ・興味】<strong>ろう者の発信</strong>、学習科学、アジャイル開発、情報保障</p>
@@ -82,7 +61,7 @@
 
           <div class="list">
             <a href="https://kotan-86.github.io/">
-              <img src="images/saitoh.jpg" alt="" class="img">
+              <img src="images/saitoh.jpg" alt="齋藤光貴" class="img" loading="lazy">
               <h4><strong>齋藤 光貴（Koki Saitoh）</strong></h4>
               <p>技術科学研究科 産業技術学専攻 産業情報学コース 1年</p>
               <p>【研究テーマ・興味】<strong>自己調整学習</strong>、学習科学、Edtech、チーム運営</p>
@@ -94,61 +73,60 @@
           </div>
 
           <div class="list">
-              <img src="images/akano.jpg" alt="" class="img">
-              <h4><strong>赤野 芽（Mei Akano）</strong></h4>
-              <p>産業技術学部 産業情報学科 支援技術学コース 情報保障工学領域 4年</p>
-              <p>【研究テーマ・興味】<strong>聴覚障害者への心理的アプローチの検討</strong>、聴覚障害者（児も含める）メンタルヘルス、教育、子どもたちの居場所づくり、音楽</p>
-              <p>【趣味】推しを眺めること（赤楚衛二しか勝たん）、音楽鑑賞、聖地巡り</p>
-              <p>【障害状況】補聴器を付ければ、日常生活程度の会話内容は理解できるが、雑音環境下による口話でのやり取りは困難。</p>
-              <p>【コミュニケーション手段】第一言語は手話。相手や状況に応じて、声もつけて手話でコミュニケーション取る場合も。</p>
-              <p style="padding-left: 17em;" >【一言】「乗り越えた壁はいつか自分を守る盾となる」精神で頑張ります！</p>
+            <img src="images/akano.jpg" alt="赤野芽" class="img" loading="lazy">
+            <h4><strong>赤野 芽（Mei Akano）</strong></h4>
+            <p>産業技術学部 産業情報学科 支援技術学コース 情報保障工学領域 4年</p>
+            <p>【研究テーマ・興味】<strong>聴覚障害者への心理的アプローチの検討</strong>、聴覚障害者（児も含める）メンタルヘルス、教育、子どもたちの居場所づくり、音楽</p>
+            <p>【趣味】推しを眺めること（赤楚衛二しか勝たん）、音楽鑑賞、聖地巡り</p>
+            <p>【障害状況】補聴器を付ければ、日常生活程度の会話内容は理解できるが、雑音環境下による口話でのやり取りは困難。</p>
+            <p>【コミュニケーション手段】第一言語は手話。相手や状況に応じて、声もつけて手話でコミュニケーション取る場合も。</p>
+            <p>【一言】「乗り越えた壁はいつか自分を守る盾となる」精神で頑張ります！</p>
           </div>
 
           <div class="list">
-              <img src="images/ishihama.jpg" alt="" class="img">
-              <h4><strong>石濱 日菜（Hina Ishihama）</strong></h4>
-              <p>産業技術学部 産業情報学科 情報科学コース 4年</p>
-              <p>【研究テーマ・興味】<strong>ろう・難聴者と聴者混合のグループコミュニケーション</strong>、情報保障</p>
-              <p>【趣味】カラオケ、ゲーム</p>
-              <p>【障害状況】先天性感音性難聴</p>
-              <p>【コミュニケーション手段】音声認識等</p>
-              <p>【一言】研究のもやもやは、爆音で大熱唱して発散するに限る！</p>
+            <img src="images/ishihama.jpg" alt="石濱日菜" class="img" loading="lazy">
+            <h4><strong>石濱 日菜（Hina Ishihama）</strong></h4>
+            <p>産業技術学部 産業情報学科 情報科学コース 4年</p>
+            <p>【研究テーマ・興味】<strong>ろう・難聴者と聴者混合のグループコミュニケーション</strong>、情報保障</p>
+            <p>【趣味】カラオケ、ゲーム</p>
+            <p>【障害状況】先天性感音性難聴</p>
+            <p>【コミュニケーション手段】音声認識等</p>
+            <p>【一言】研究のもやもやは、爆音で大熱唱して発散するに限る！</p>
           </div>
 
           <div class="list">
-              <!-- <img src="images/Saitoh.jpg" alt="" class="img"> -->
-              <h4><strong>小山 穂乃花（Honoka Koyama）</strong></h4>
-              <p>産業技術学部 産業情報学科 支援技術学コース 情報保障工学領域 4年</p>
-              <p>【研究テーマ・興味】</p>
-              <p>【趣味】</p>
-              <p>【障害状況】</p>
-              <p>【コミュニケーション手段】</p>
-              <p>【一言】</p>
+            <h4><strong>小山 穂乃花（Honoka Koyama）</strong></h4>
+            <p>産業技術学部 産業情報学科 支援技術学コース 情報保障工学領域 4年</p>
+            <p>【研究テーマ・興味】</p>
+            <p>【趣味】</p>
+            <p>【障害状況】</p>
+            <p>【コミュニケーション手段】</p>
+            <p>【一言】</p>
           </div>
 
           <div class="list">
-              <!-- <img src="images/Saitoh.jpg" alt="" class="img"> -->
-              <h4><strong>徳永 理波（Rina Tokunaga）</strong></h4>
-              <p>産業技術学部 産業情報学科 情報科学コース 4年</p>
-              <p>【研究テーマ・興味】</p>
-              <p>【趣味】</p>
-              <p>【障害状況】</p>
-              <p>【コミュニケーション手段】</p>
-              <p>【一言】</p>
+            <h4><strong>徳永 理波（Rina Tokunaga）</strong></h4>
+            <p>産業技術学部 産業情報学科 情報科学コース 4年</p>
+            <p>【研究テーマ・興味】</p>
+            <p>【趣味】</p>
+            <p>【障害状況】</p>
+            <p>【コミュニケーション手段】</p>
+            <p>【一言】</p>
           </div>
 
           <div class="list">
-              <img src="images/yamada.png" alt="" class="img">
-              <h4><strong>山田 輝和（Hiyori Yamada）</strong></h4>
-              <p>産業技術学部 産業情報学科 情報科学コース 4年</p>
-              <p>【研究テーマ・興味】<strong>国内の事前収録映像コンテンツの字幕制作者支援</strong>、 情報保障、インクルーシブデザイン、UI/UX </p>
-              <p>【趣味】バレーボール、ゲーム、映画鑑賞</p>
-              <p>【障害状況】先天性感音性難聴　口話での会話が概ね可能なレベル（状況による）</p>
-              <p>【コミュニケーション手段】口話、手話</p>
-              <p>【一言】<strong>毎日がeveryday</strong></p>
+            <img src="images/yamada.png" alt="山田輝和" class="img" loading="lazy">
+            <h4><strong>山田 輝和（Hiyori Yamada）</strong></h4>
+            <p>産業技術学部 産業情報学科 情報科学コース 4年</p>
+            <p>【研究テーマ・興味】<strong>国内の事前収録映像コンテンツの字幕制作者支援</strong>、情報保障、インクルーシブデザイン、UI/UX</p>
+            <p>【趣味】バレーボール、ゲーム、映画鑑賞</p>
+            <p>【障害状況】先天性感音性難聴　口話での会話が概ね可能なレベル（状況による）</p>
+            <p>【コミュニケーション手段】口話、手話</p>
+            <p>【一言】<strong>毎日がeveryday</strong></p>
           </div>
-          
+
           <h2>卒業生</h2>
+
           <div class="list">
             <h4>髙瀬友花</h4>
             <p>2025年卒 産業技術学部 産業情報学科 支援技術学コース 情報保障工学領域</p>
@@ -168,62 +146,23 @@
             <h4>廣瀬紫優</h4>
             <p>2023年卒 産業技術学部 産業情報学科 情報科学専攻</p>
           </div>
+
         </section>
 
       </div>
-      <!--/main-->
 
-      <div id="sub">
-
-        <nav class="box">
-          <h2>Menu</h2>
-          <ul class="submenu">
-            <li><a href="projects.html">研究テーマ</a></li>
-            <li><a href="https://note.com/bridge_ntut">活動・記事</a></li>
-          </ul>
-        </nav>
-
-        <section class="box">
-          <p class="c"><strong>筑波技術大学　産業技術学部　産業情報学科　共創データ工学研究室</strong><br>
-            <span class="mini1">茨城県つくば市天久保4-3-15<br>
-          </p>
-        </section>
-
-      </div>
-      <!--/sub-->
+      <aside class="sub"></aside>
 
     </div>
-    <!--/contents-->
 
-    <footer>
-      <small>Copyright&copy; <a href="index.html">NTUT BRIDGE LAB</a> All Rights Reserved.</small>
-      <span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
-    </footer>
+    <footer class="site-footer"></footer>
 
   </div>
-  <!--/container-->
 
-  <!--小さな端末用（800px以下端末）メニュー-->
-  <nav id="menubar-s">
-    <ul>
-      <li class="current"><a href="index.html">HOME<span>トップページ</span></a></li>
-      <li><a href="members.html">MEMBERs<span>メンバー</span></a></li>
-      <li><a href="#">PROJECTs<span>研究プロジェクト</span></a></li>
-      <li><a href="#">PUBLICATIONs<span>業績</span></a></li>
-      <li><a href="https://note.com/bridge_ntut">BLOG<span>活動・記事</span></a></li>
-    </ul>
-  </nav>
-
+  <nav id="menubar-s" class="menubar-s"></nav>
   <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+  <div id="menubar_hdr" class="menubar-hdr close"></div>
 
-  <!--メニュー開閉ボタン-->
-  <div id="menubar_hdr" class="close"></div>
-  <!--メニューの開閉処理条件設定　900px以下-->
-  <script type="text/javascript">
-    if (OCwindowWidth() <= 900) {
-      open_close("menubar_hdr", "menubar-s");
-    }
-  </script>
 </body>
 
 </html>

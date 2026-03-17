@@ -89,7 +89,7 @@ a:hover {
 
 /*containerブロック
 ---------------------------------------------------------------------------*/
-#container {
+.container {
   max-width: 1200px;
   /*サイトの最大幅*/
   padding: 0 3%;
@@ -107,7 +107,7 @@ header {
 }
 
 /*ロゴ画像*/
-header #logo img {
+header .logo img {
   width: 350px;
   /*画像幅*/
   float: left;
@@ -117,7 +117,7 @@ header #logo img {
 }
 
 /*スタッフ募集中バナー*/
-header #banner img {
+header .banner img {
   width: 350px;
   /*画像幅*/
   float: right;
@@ -129,13 +129,13 @@ header #banner img {
 /*メインメニュー
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
-#menubar {
+.menubar {
   overflow: hidden;
   padding-bottom: 40px;
 }
 
 /*メニュー１個あたりの設定*/
-#menubar li {
+.menubar li {
   float: left;
   /*左に回り込み*/
   width: 19.6%;
@@ -148,12 +148,12 @@ header #banner img {
   /*行間*/
 }
 
-#menubar li:first-child {
+.menubar li:first-child {
   margin-left: 0;
   /*１つ目のメニューの左側の余白をなくす設定*/
 }
 
-#menubar li a {
+.menubar li a {
   display: block;
   text-decoration: none;
   background: #111 url(../images/bg1.png);
@@ -168,37 +168,37 @@ header #banner img {
 }
 
 /*英語表記（飾り文字）*/
-#menubar li a span {
+.menubar li a span {
   display: block;
   font-size: 9px;
   /*文字サイズ*/
 }
 
 /*マウスオン時と、現在表示中メニューの設定*/
-#menubar li a:hover,
-#menubar li.current a {
+.menubar li a:hover,
+.menubar li.current a {
   background: #24810c;
 }
 
 /*スマホ用メニューを表示させない*/
-#menubar-s {
+.menubar-s {
   display: none;
 }
 
 /*３本バーアイコンを表示させない*/
-#menubar_hdr {
+.menubar-hdr {
   display: none;
 }
 
 /*コンテンツ（mainとsubを囲むブロック）
 ---------------------------------------------------------------------------*/
-#contents {
+.contents {
   clear: both;
   overflow: hidden;
 }
 
 /*背景色付きタイプ*/
-#contents.bg {
+.contents.bg {
   background: #000;
   /*背景色*/
   padding: 2%;
@@ -207,14 +207,14 @@ header #banner img {
   /*文字色*/
 }
 
-#contents.bg a {
+.contents.bg a {
   color: #fff;
   /*リンクテキストの文字色*/
 }
 
 /*mainコンテンツ
 ---------------------------------------------------------------------------*/
-#main {
+.main {
   float: left;
   /*左に回り込み*/
   width: 72%;
@@ -222,7 +222,7 @@ header #banner img {
 }
 
 /*h2タグの設定*/
-#main h2 {
+.main h2 {
   clear: both;
   font-size: 20px;
   /*文字サイズ*/
@@ -239,7 +239,7 @@ header #banner img {
 }
 
 /*h2タグの１文字目の設定*/
-#main h2::first-letter {
+.main h2::first-letter {
   border-left: 3px solid #24810c;
   /*左側の線の幅、線種、色*/
   padding-left: 20px;
@@ -247,7 +247,7 @@ header #banner img {
 }
 
 /*h3タグの設定*/
-#main h3 {
+.main h3 {
   clear: both;
   margin-bottom: 20px;
   /*見出しの下にとるスペース*/
@@ -264,24 +264,24 @@ header #banner img {
 }
 
 /*段落タグ設定*/
-#main p {
+.main p {
   padding: 0px 20px 15px;
   /*上、左右、下への余白*/
 }
 
-#main h2+p,
-#main h3+p {
+.main h2+p,
+.main h3+p {
   margin-top: -10px;
 }
 
-#main section+section {
+.main section+section {
   margin-top: 50px;
 }
 
 /*ボックス（list）設定
 ---------------------------------------------------------------------------*/
 /*ボックス１個あたりの設定*/
-#main .list {
+.main .list {
   position: relative;
   overflow: hidden;
   background: #fff;
@@ -294,7 +294,7 @@ header #banner img {
   /*ボックス内の余白*/
 }
 
-#main .list a {
+.main .list a {
   overflow: hidden;
   display: block;
   text-decoration: none;
@@ -305,13 +305,13 @@ header #banner img {
 }
 
 /*背景色付きタイプの追加設定*/
-#contents.bg #main .list {
+.contents.bg .main .list {
   background: #000;
   /*背景色*/
 }
 
 /*マウスオン時設定*/
-#main .list a:hover {
+.main .list a:hover {
   background: #000;
   /*マウスオン時の背景色*/
   color: #fff;
@@ -319,7 +319,7 @@ header #banner img {
 }
 
 /*背景色付きタイプの追加設定*/
-#contents.bg #main .list a:hover {
+.contents.bg .main .list a:hover {
   background: #fff;
   /*マウスオン時の背景色*/
   color: #333;
@@ -327,7 +327,7 @@ header #banner img {
 }
 
 /*ボックスにリンク指定がされた場合に出る「→」マーク*/
-#main .list a::before {
+.main .list a::before {
   content: "→";
   /*この文字を出す。他の文字に変えても可だが機種依存文字は化けるので使わない。*/
   position: absolute;
@@ -352,13 +352,13 @@ header #banner img {
   text-align: center;
 }
 
-#main .list a:hover::before {
+.main .list a:hover::before {
   background: #000;
   /*マウスオン時の「→」マークの背景色*/
 }
 
 /*ボックス内の画像設定*/
-#main .list .img {
+.main .list .img {
   width: 30%;
   /*画像の幅*/
   float: left;
@@ -366,7 +366,7 @@ header #banner img {
 }
 
 /*ボックス内のh4（見出し）タグ設定*/
-#main .list h4 {
+.main .list h4 {
   font-size: 18px;
   /*文字サイズ*/
   color: #24810c;
@@ -374,14 +374,14 @@ header #banner img {
 }
 
 /*ボックス内のp（段落）タグ設定*/
-#main .list p {
+.main .list p {
   padding: 0;
 }
 
 /*subコンテンツ
 ---------------------------------------------------------------------------*/
 /*subブロック*/
-#sub {
+.sub {
   float: right;
   /*右に回り込み*/
   width: 24%;
@@ -389,7 +389,7 @@ header #banner img {
 }
 
 /*subコンテンツ内のh2タグ設定*/
-#sub h2 {
+.sub h2 {
   text-align: center;
   /*内容をセンタリング*/
   padding: 5px 15px;
@@ -402,7 +402,7 @@ header #banner img {
 
 /*subコンテンツのbox
 ---------------------------------------------------------------------------*/
-#sub .box {
+.sub .box {
   border: 5px solid #ddd;
   /*枠線の幅、線種、色*/
   padding: 10px;
@@ -414,7 +414,7 @@ header #banner img {
 }
 
 /*背景色付きタイプの追加設定*/
-#contents.bg #sub .box {
+.contents.bg .sub .box {
   border: 5px solid #333;
   /*枠線の幅、線種、色*/
   background: transparent;
@@ -423,13 +423,13 @@ header #banner img {
 /*subコンテンツ内のメニュー
 ---------------------------------------------------------------------------*/
 /*メニュー全体の設定*/
-#sub ul.submenu {
+.sub ul.submenu {
   margin-bottom: 20px;
   /*ブロックの下に空けるスペース*/
 }
 
 /*メニュー１個ごとの設定*/
-#sub ul.submenu li a {
+.sub ul.submenu li a {
   text-decoration: none;
   display: block;
   padding: 5px 10px;
@@ -439,7 +439,7 @@ header #banner img {
 }
 
 /*マウスオン時の背景色*/
-#sub ul.submenu li a:hover {
+.sub ul.submenu li a:hover {
   background: #f0f0f0;
   /*背景色*/
   color: #333;
@@ -447,14 +447,14 @@ header #banner img {
 }
 
 /*box内のメニューブロックの設定*/
-#sub .box ul.submenu {
+.sub .box ul.submenu {
   margin-bottom: 0;
 }
 
 /*サブコンテンツ内の一覧ブロック
 ---------------------------------------------------------------------------*/
 /*各ボックスの設定*/
-#sub .list {
+.sub .list {
   position: relative;
   overflow: hidden;
   font-size: 11px;
@@ -463,7 +463,7 @@ header #banner img {
   /*行間を狭くする*/
 }
 
-#sub .list a {
+.sub .list a {
   text-decoration: none;
   display: block;
   overflow: hidden;
@@ -474,7 +474,7 @@ header #banner img {
 }
 
 /*マウスオン時*/
-#sub .list a:hover {
+.sub .list a:hover {
   background: #f0f0f0;
   /*背景色*/
   color: #333;
@@ -482,13 +482,13 @@ header #banner img {
 }
 
 /*ボックス内のh4タグ設定*/
-#sub .list h4 {
+.sub .list h4 {
   color: #24810c;
   /*文字色*/
 }
 
 /*ボックス内の写真設定*/
-#sub .list figure img {
+.sub .list figure img {
   float: left;
   /*画像を左へ回り込み*/
   width: 20%;
@@ -517,14 +517,14 @@ footer .pr {
 /*トップページ内「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
 /*ブロック全体の設定*/
-#new dl {
+.news dl {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
 }
 
 /*日付設定*/
-#new dt {
+.news dt {
   float: left;
   width: 9em;
   /*幅*/
@@ -534,7 +534,7 @@ footer .pr {
 }
 
 /*記事設定*/
-#new dd {
+.news dd {
   padding-left: 9em;
   border-bottom: 1px solid #333;
   /*下線の幅、線種、色*/
@@ -563,7 +563,7 @@ footer .pr {
 }
 
 /*背景色付きタイプの場合の追加設定*/
-#contents.bg .ta1 a {
+.contents.bg .ta1 a {
   color: #333;
 }
 
@@ -594,9 +594,9 @@ footer .pr {
 
 /*inputボタン
 ---------------------------------------------------------------------------*/
-#main input[type="submit"].btn,
-#main input[type="button"].btn,
-#main input[type="reset"].btn {
+.main input[type="submit"].btn,
+.main input[type="button"].btn,
+.main input[type="reset"].btn {
   padding: 5px 10px;
   border: 1px solid #ccc;
   font-size: 15px;
@@ -605,9 +605,9 @@ footer .pr {
 }
 
 /*マウスオン時の設定*/
-#main input[type="submit"].btn:hover,
-#main input[type="button"].btn:hover,
-#main input[type="reset"].btn:hover {
+.main input[type="submit"].btn:hover,
+.main input[type="button"].btn:hover,
+.main input[type="reset"].btn:hover {
   border: 1px solid #999;
 }
 
@@ -645,8 +645,16 @@ footer .pr {
   margin-bottom: 30px !important;
 }
 
+.mt20 {
+  margin-top: 20px !important;
+}
+
 .p0 {
   padding: 0 !important;
+}
+
+.archive-nav {
+  text-align: right;
 }
 
 .clear {
@@ -728,7 +736,7 @@ img.fl {
   /*ヘッダー（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
   /*スタッフ募集中バナー*/
-  header #banner img {
+  header .banner img {
     width: 250px;
     /*画像幅*/
     margin-top: 32px;
@@ -750,7 +758,7 @@ img.fl {
   }
 
   /*スマホ用メニューブロック*/
-  #menubar-s {
+  .menubar-s {
     display: block;
     overflow: hidden;
     position: absolute;
@@ -769,7 +777,7 @@ img.fl {
   }
 
   /*メニュー１個あたりの設定*/
-  #menubar-s li a {
+  .menubar-s li a {
     display: block;
     text-decoration: none;
     padding: 15px 10px 15px 20px;
@@ -784,21 +792,21 @@ img.fl {
   }
 
   /*英語表記（飾り文字）*/
-  #menubar-s li a span {
+  .menubar-s li a span {
     display: block;
     font-size: 12px;
     /*文字サイズ*/
   }
 
   /*PC用メニューを非表示にする*/
-  #menubar {
+  .menubar {
     display: none;
   }
 
   /*３本バーアイコン設定
 ---------------------------------------------------------------------------*/
   /*３本バーブロック*/
-  #menubar_hdr {
+  .menubar-hdr {
     display: block;
     position: absolute;
     top: 36px;
@@ -810,8 +818,8 @@ img.fl {
   }
 
   /*アイコン共通設定*/
-  #menubar_hdr.close,
-  #menubar_hdr.open {
+  .menubar-hdr.close,
+  .menubar-hdr.open {
     width: 50px;
     /*幅*/
     height: 50px;
@@ -819,37 +827,37 @@ img.fl {
   }
 
   /*三本バーアイコン*/
-  #menubar_hdr.close {
+  .menubar-hdr.close {
     background: #fff url(../images/icon_menu.png) no-repeat center top/50px;
   }
 
   /*閉じるアイコン*/
-  #menubar_hdr.open {
+  .menubar-hdr.open {
     background: #fff url(../images/icon_menu.png) no-repeat center bottom/50px;
   }
 
   /*メイン画像
 ---------------------------------------------------------------------------*/
-  #mainimg {
+  .mainimg {
     margin-bottom: 20px;
   }
 
-  #mainimg img {
+  .mainimg img {
     width: 100vw;
   }
 
   /*main,subコンテンツ
 ---------------------------------------------------------------------------*/
-  #main,
-  #sub {
+  .main,
+  .sub {
     float: none;
     width: auto;
   }
 
   /*その他
 ---------------------------------------------------------------------------*/
-  body.s-n #sub,
-  body.s-n #footermenu,
+  body.s-n .sub,
+  body.s-n .footermenu,
   .m-n {
     display: none;
   }
@@ -865,7 +873,7 @@ img.fl {
   /*ヘッダー（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
   /*スタッフ募集中バナー*/
-  header #banner img {
+  header .banner img {
     display: none;
   }
 
@@ -880,7 +888,7 @@ img.fl {
   /*ヘッダー（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
   /*ロゴ画像*/
-  header #logo img {
+  header .logo img {
     width: 200px;
     /*画像幅*/
     margin-top: 50px;
@@ -898,15 +906,15 @@ img.fl {
 
   /*mainコンテンツ
 ---------------------------------------------------------------------------*/
-  #main h2,
-  #main h3 {
+  .main h2,
+  .main h3 {
     font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
   /*段落タグ設定*/
-  #main p {
+  .main p {
     padding: 0px 10px 15px;
     /*上、左右、下への余白*/
   }
@@ -914,7 +922,7 @@ img.fl {
   /*トップページ内「更新情報・お知らせ」ブロック
 ---------------------------------------------------------------------------*/
   /*ブロック全体の設定*/
-  #new dl {
+  .news dl {
     padding-left: 10px;
     padding-right: 10px;
   }

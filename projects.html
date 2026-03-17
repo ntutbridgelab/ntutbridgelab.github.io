@@ -3,120 +3,103 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>共創データ工学研究室(BRIDGE Lab.) 筑波技術大学 産業技術学部 産業情報学科 </title>
+  <title>研究プロジェクト - 共創データ工学研究室(BRIDGE Lab.)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="Building Resilient and Inclusive Data-Guided Environments Lab. データ主導の環境構築により、強靭でインクルーシブな社会を目指す研究室です。">
   <meta name="keywords" content="データベース、データ分析、EdTech、学習科学、PBL、インクルージョン、情報保障">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fixmenu_pagetop.css">
-  <script type="text/javascript" src="js/openclose.js"></script>
-  <script type="text/javascript" src="js/fixmenu_pagetop.js"></script>
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <script src="js/openclose.js"></script>
+  <script src="js/fixmenu_pagetop.js"></script>
+  <script src="js/components.js"></script>
 </head>
 
 <body>
 
-  <div id="container">
+  <div class="container">
 
-    <header>
-      <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="渡辺・菊地・鍾研究室"></a></h1>
-      <!-- <p id="banner"><a href="recruit.html"><img src="images/banner1.jpg" alt="研究室に興味のある学生はいつでもお声がけください"></a></p> -->
-    </header>
+    <header class="site-header"></header>
 
-    <!--PC用（801px以上端末）メニュー-->
-    <nav id="menubar">
-      <ul>
-        <li><a href="index.html">HOME<span>トップページ</span></a></li>
-        <li><a href="members.html">MEMBERs<span>メンバー</span></a></li>
-        <li class="current"><a href="#">PROJECTs<span>研究プロジェクト</span></a></li>
-        <li><a href="/publications.html">PUBLICATIONs<span>業績</span></a></li>
-        <li><a href="https://note.com/bridge_ntut">BLOG<span>活動・記事</span></a></li>
-      </ul>
-    </nav>
+    <nav class="menubar"></nav>
 
-    <div id="contents">
+    <div class="contents">
 
-      <div id="main">
+      <div class="main">
 
         <section>
+
           <h2>聴覚障害を対象としたアジャイルなソフトウエア開発のインクルーシブデザイン</h2>
           <div>
             近年、世界は急速に変化しており、それに対応するためにアジャイルというソフトウェア開発手法が注目されています。アジャイル開発では、人との対話、実際に動くソフトウェア、お客様との協力、変化への対応を大切にしています。開発者とお客様が力を合わせて、最高のプロダクトを作ることを目指すのです。しかし、ろう・難聴のソフトウェアエンジニア（デフエンジニアと呼ばれます）は、アジャイル開発で重要な多人数でのコミュニケーションに参加するのが難しいという問題があります。この研究プロジェクトでは、デフエンジニアを含むアジャイル開発チームでのコミュニケーションの課題を明らかにし、その課題を解決するために、誰もが参加しやすい開発環境を設計することを目的としています。具体的には、耳の聞こえるエンジニアだけのチーム、デフエンジニアだけのチーム、両者が混ざったチームの3つのタイプで、それぞれのコミュニケーションの特徴を分析します。そして、障害を持つエンジニアも参加しやすくなるような、新しいルールや技術を開発するのです。
           </div>
 
-            <h2>ソフトウエア開発環境における音声発話（口話）を使わない聴覚障害者からの発言</h2>
+          <h2>ソフトウエア開発環境における音声発話（口話）を使わない聴覚障害者からの発言</h2>
+          <div>
             <div>
-              <div>
               近年、音声認識技術などが発達し、音声会話を文字に起こし情報を得ることが（まだいくつかの困難はあるものの）可能となってきました。
-              しかしINSERTが中心となる会議において、ろう・難聴者が発言することは未だ難しい問題です。本研究プロジェクトでは音声会話の中でろう・難聴者が
-              発言しにくい要因を状況ごとに深く掘り下げて分析し、効果的な発言戦略を提案し、実験を通して検証します。                
-              </div>
-              <dl>
-                <dt>メンバー：</dt><dd>飯塚涼太（M1）</dd>
-                <dt>Supervisors：</dt><dd>渡辺知恵美</dd>
-                <dt>発表：</dt><dd>
-                  <ol>
-                    <li>飯塚涼太，渡辺知恵美: ソフトウェア開発場面における音声会話を使わない聴覚障害者からの発言, 第27回情報処理学会アクセシビリティ研究会</li>
-                    <li>飯塚涼太: エンジニアもデフエンジニアもわいわい会話・議論したい！ ～聴覚障がい者当事者の経験・視点から～, Scrum Fest Sendai 2024.</li>
-                  </ol>
-                </dd>
-              </dl>
-              
+              しかし音声が中心となる会議において、ろう・難聴者が発言することは未だ難しい問題です。本研究プロジェクトでは音声会話の中でろう・難聴者が
+              発言しにくい要因を状況ごとに深く掘り下げて分析し、効果的な発言戦略を提案し、実験を通して検証します。
             </div>
-          
+            <dl>
+              <dt>メンバー：</dt>
+              <dd>飯塚涼太（M1）</dd>
+              <dt>Supervisors：</dt>
+              <dd>渡辺知恵美</dd>
+              <dt>発表：</dt>
+              <dd>
+                <ol>
+                  <li>飯塚涼太，渡辺知恵美: ソフトウェア開発場面における音声会話を使わない聴覚障害者からの発言, 第27回情報処理学会アクセシビリティ研究会</li>
+                  <li>飯塚涼太: エンジニアもデフエンジニアもわいわい会話・議論したい！ ～聴覚障がい者当事者の経験・視点から～, Scrum Fest Sendai 2024.</li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
 
-            <h2>個別最適で対話的な学びを支援する学習デザインと教育データ分析</h2>
+          <h2>個別最適で対話的な学びを支援する学習デザインと教育データ分析</h2>
+          <div>
             <div>
-              <div>
               本研究室では、学生の学習特性や認知特性の多様性を考慮した効果的な学習デザインとして「自己調整学習」に着目しています。
               さらに学生同士の建設的な相互作用による協働的な学びを取り入れた授業を、筑波技術大学での授業を対象に実践的にデザインします。
               学習デザイン設計に加え、受講生の学習内容の理解度や学習特性を理解し適切なサポートを行うための学習ログデータの取得と分析についての研究を行っています。
-              </div>
-
-              <dl>
-                <dt>メンバー：</dt><dd>齋藤光貴（M1)</dd>
-                <dt>Supervisors：</dt><dd>渡辺知恵美、菊地浩平</dd>
-                <dt>発表：</dt><dd>
-                  <ol>
-                    <li>齋藤光貴，渡辺知恵美，菊地浩平: 自学習環境における学習分析ダッシュボードを用いたメタ認知的活動の変化の検証, 教育工学学会研究会, 2025</li>
-                    <li>Chiemi Watanabe, Koki Saito: Designing a Self-Regulated and Constructive Database Course for Deaf and Hard-of-Hearing Students, Proceedings of the 3rd International Workshop on Data Systems Education: Bridging education practice with education research, DataEd 2024, 2024</li>
-                    <li>齋藤光貴, 渡辺知恵美: 3段階の学習過程を前提とした自己学習環境における講義動画閲覧履歴による学習状況分析, 第16回データ工学と情報マネジメントに関するフォーラム, T5-A-2-01, 2024</li>
-                  </ol>
-                </dd>
-              </dl>
-              
             </div>
+            <dl>
+              <dt>メンバー：</dt>
+              <dd>齋藤光貴（M1)</dd>
+              <dt>Supervisors：</dt>
+              <dd>渡辺知恵美、菊地浩平</dd>
+              <dt>発表：</dt>
+              <dd>
+                <ol>
+                  <li>齋藤光貴，渡辺知恵美，菊地浩平: 自学習環境における学習分析ダッシュボードを用いたメタ認知的活動の変化の検証, 教育工学学会研究会, 2025</li>
+                  <li>Chiemi Watanabe, Koki Saito: Designing a Self-Regulated and Constructive Database Course for Deaf and Hard-of-Hearing Students, Proceedings of the 3rd International Workshop on Data Systems Education: Bridging education practice with education research, DataEd 2024, 2024</li>
+                  <li>齋藤光貴, 渡辺知恵美: 3段階の学習過程を前提とした自己学習環境における講義動画閲覧履歴による学習状況分析, 第16回データ工学と情報マネジメントに関するフォーラム, T5-A-2-01, 2024</li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
 
-            <h2>ろう・難聴者と複数の聴者による会話での情報保障</h2>
+          <h2>ろう・難聴者と複数の聴者による会話での情報保障</h2>
+          <div>
             <div>
-              <div>
-                グループワークや複数人での会話などで複数の聴者とろう・難聴者が会話をする際に適切な情報保障について研究しています。
-                音声認識などのツールでは、複数名の聴者によるテンポの速い音声会話にはあまり適応しておらず、また会話の内容把握が遅れ話に入っていくことが
-                難しくなります。本研究室では、複数人での音声会話に入ることの難しさを科学的に分析してまとめ、音声会話だけに頼らない、そのグループならではの
-                コミュニケーションの構築方法などの模索をしています。                
-              </div>
-
-              <ol>
-                <li>髙瀨友花, <a href="https://note.com/bridge_ntut/n/ned9f507ee642">聴覚障害者と聴者との雑談時に双方のストレスを軽減する方法</a>, 2024年度卒業研究</li>
-                <li>髙瀨友花, 渡辺知恵美: 長期的関係を持つろう・難聴者と聴者に対するコミュニケーション形成・改善のための振り返りの諸検討, 第27回情報処理学会アクセシビリティ研究会</li>
-              </ol>
-              
+              グループワークや複数人での会話などで複数の聴者とろう・難聴者が会話をする際に適切な情報保障について研究しています。
+              音声認識などのツールでは、複数名の聴者によるテンポの速い音声会話にはあまり適応しておらず、また会話の内容把握が遅れ話に入っていくことが
+              難しくなります。本研究室では、複数人での音声会話に入ることの難しさを科学的に分析してまとめ、音声会話だけに頼らない、そのグループならではの
+              コミュニケーションの構築方法などの模索をしています。
             </div>
+            <ol>
+              <li>髙瀨友花, <a href="https://note.com/bridge_ntut/n/ned9f507ee642">聴覚障害者と聴者との雑談時に双方のストレスを軽減する方法</a>, 2024年度卒業研究</li>
+              <li>髙瀨友花, 渡辺知恵美: 長期的関係を持つろう・難聴者と聴者に対するコミュニケーション形成・改善のための振り返りの諸検討, 第27回情報処理学会アクセシビリティ研究会</li>
+            </ol>
+          </div>
 
-            <h2>テレビ放送や映画上映における字幕生成支援</h2>
+          <h2>テレビ放送や映画上映における字幕生成支援</h2>
+          <div>
             <div>
-              <div>
               2025年現在、多くのテレビ番組や映画で字幕がつけられるようになったものの、まだまだすべての作品につけられているわけではありません。
               また、字幕生成には字幕生成スキル、作成時間の制約、品質保証、字幕データの著作権問題等様々な問題があり、字幕生成者の負担が大きいという問題があります。
               本研究室では、より多くの映像作品に字幕が付与されるよう、データ工学およびAI技術等を利用した効率的な字幕生成手法を提案します。
-              </div>
             </div>
-
             <dl>
               <dt>メンバー：</dt>
               <dd>山田輝和</dd>
@@ -127,66 +110,24 @@
                 </ol>
               </dd>
             </dl>
-          
-          
+          </div>
 
         </section>
 
       </div>
-      <!--/main-->
 
-      <div id="sub">
-
-        <nav class="box">
-          <h2>Menu</h2>
-          <ul class="submenu">
-            <li><a href="projects.html">研究テーマ</a></li>
-            <li><a href="https://note.com/bridge_ntut">活動・記事</a></li>
-          </ul>
-        </nav>
-
-        <section class="box">
-          <h2>ACCESS</h2>
-          <p class="c"><strong>筑波技術大学　産業技術学部　産業情報学科　共創データ工学研究室</strong><br>
-            <span class="mini1">茨城県つくば市天久保4-3-15<br>
-          </p>
-        </section>
-
-      </div>
-      <!--/sub-->
+      <aside class="sub"></aside>
 
     </div>
-    <!--/contents-->
 
-    <footer>
-      <small>Copyright&copy; <a href="index.html">NTUT BRIDGE LAB</a> All Rights Reserved.</small>
-      <span class="pr"><a href="http://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
-    </footer>
+    <footer class="site-footer"></footer>
 
   </div>
-  <!--/container-->
 
-  <!--小さな端末用（800px以下端末）メニュー-->
-  <nav id="menubar-s">
-    <ul>
-      <li><a href="index.html">HOME<span>トップページ</span></a></li>
-      <li><a href="members.html">MEMBERs<span>メンバー</span></a></li>
-      <li><a href="#">PROJECTs<span>研究プロジェクト</span></a></li>
-      <li class="current"><a href="#">PUBLICATIONs<span>業績</span></a></li>
-      <li><a href="https://note.com/bridge_ntut">BLOG<span>活動・記事</span></a></li>
-    </ul>
-  </nav>
-
+  <nav id="menubar-s" class="menubar-s"></nav>
   <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+  <div id="menubar_hdr" class="menubar-hdr close"></div>
 
-  <!--メニュー開閉ボタン-->
-  <div id="menubar_hdr" class="close"></div>
-  <!--メニューの開閉処理条件設定　900px以下-->
-  <script type="text/javascript">
-    if (OCwindowWidth() <= 900) {
-      open_close("menubar_hdr", "menubar-s");
-    }
-  </script>
 </body>
 
 </html>
